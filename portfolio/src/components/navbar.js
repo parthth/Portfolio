@@ -25,6 +25,7 @@ import {
 } from '@material-ui/icons';
 import avatar from "../avatar.png"
 import {makeStyles} from '@material-ui/core/styles';
+import Footer from "./footer"
 
 // CSS Styles
 const useStyles = makeStyles(theme=>({
@@ -101,6 +102,7 @@ const NavBar = () => {
                     <Typography variant="h5" style={{color: "tan"}}>Protfolio</Typography>
                     <MobileRightMenuSLider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
                         {sideList("right")}
+                        <Footer/>
                     </MobileRightMenuSLider>
                 </Toolbar>
             </AppBar>
